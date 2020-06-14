@@ -176,6 +176,8 @@ class MainActivity : AppCompatActivity() {
                             buttonContinue.visibility = View.VISIBLE
                             textViewProgressFifteen2.text="File Download Complete!"
                             textViewProgressFifteen.text="Saved to -> InternalStorage/Decagon"
+                            buttonCancelFifteen.visibility = View.INVISIBLE
+
                         }
 
                         override fun onError(error: Error) {
