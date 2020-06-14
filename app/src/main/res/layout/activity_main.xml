@@ -19,7 +19,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sample.MainActivity">
+    tools:context="com.sample.MainActivity"
+    android:background="#73D5DD">
 
 <!--    <LinearLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -44,6 +45,7 @@
         android:layout_weight="1"
         android:text="Download Pending"
         android:textAlignment="center"
+        android:textColor="@color/color_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,6 +59,7 @@
         android:textAlignment="center"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="@color/color_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewProgressFifteen2"
         app:layout_constraintVertical_bias="0.044"
@@ -94,7 +97,9 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:enabled="false"
-            android:text="@string/cancel" />
+            android:text="@string/cancel"
+            android:textColor="@color/coolblue"
+            android:background="@drawable/book_button_background"/>
 
         <Button
             android:id="@+id/buttonFifteen"
@@ -102,6 +107,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
+            android:textColor="@color/coolblue"
+            android:background="@drawable/book_button_background"
             android:text="@string/start" />
     </LinearLayout>
 
@@ -131,7 +138,9 @@
             android:layout_weight="1"
             android:enabled="false"
             android:text="@string/cancel"
-            android:visibility="invisible"/>
+            android:visibility="invisible"
+            android:textColor="@color/coolblue"
+            android:background="@drawable/book_button_background"/>
 
         <Button
             android:visibility="invisible"
@@ -140,7 +149,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:text="Continue" />
+            android:text="Continue"
+            android:textColor="@color/coolblue"
+            android:background="@drawable/book_button_background"/>
     </LinearLayout>
 
 
