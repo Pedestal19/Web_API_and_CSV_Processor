@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#0CB8B6</color>
+    <color name="colorPrimaryDark">#079391</color>
+    <color name="colorAccent">#9F5DE2</color>
+    <color name="colorGray">#DDDDDD</color>
+    <color name="colorDarkGray">#888888</color>
+    <color name="colorMediumGray">#a39e9e</color>
+    <color name="colorLightGray">#f9f9f9</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+    <color name="severe">#bcff014a</color>
+    <color name="moderate">#131313</color>
+    <color name="mild">#0e9707</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="green">#92c37c</color>
+    <color name="blue_color">#88a3d6</color>
+    <color name="gray">#bcc1be</color>
+    <color name="prob">#9f5de2</color>
+    <color name="acute">#dc78ad</color>
+    <color name="prev">#e8a765</color>
+    <color name="text_gray">#252424</color>
+    <color name="shadowColor">#454545</color>
+    <color name="colorSeeDoctorNowPink">#FDA2AA</color>
+    <color name="colorBookAppointmentBlue">#5DDEF5</color>
+    <color name="colorCheckupOrange">#FDC19F</color>
+    <color name="doctorsPageBlue">#5C86CE</color>
+    <color name="doctorsPagePink">#FF7480</color>
+    <color name="profilePagePink">#DC2430</color>
+    <color name="profilePagePurple">#7B4397</color>
+
+    <color name="casesBlue">#799DDB</color>
+    <color name="casesPink">#FDA2AA</color>
+    <color name="select_btn_color">#EDEDED</color>
+    <color name="appointments2_activity_sort_constraint_layout_background_color">#F2F2F2</color>
+
+    <color name="span_btn_color">#B1B1B1</color>
+
+    <color name="appointments1_activity_overlay_five_constraint_layout_background_color">#DADADA
+    </color>
+    <color name="color_docs_profile">#4D4D4D</color>
+    <color name="colorCovidTab">#6BF0A6</color>
+</resources>
