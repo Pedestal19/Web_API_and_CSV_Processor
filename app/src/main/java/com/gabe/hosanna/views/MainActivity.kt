@@ -106,6 +106,8 @@ class MainActivity : AppCompatActivity() {
             buttonContinue.visibility = View.VISIBLE
             textViewProgressFifteen2.text = "File Already Downloaded"
             textViewProgressFifteen.text = "Saved to Internal Storage/Decagon"
+            buttonFifteen.visibility = View.INVISIBLE
+            buttonCancelFifteen.visibility = View.INVISIBLE
 
         } else {
             print("csv does not exist.")
@@ -168,6 +170,9 @@ class MainActivity : AppCompatActivity() {
                             buttonFifteen.isEnabled = false
                             buttonStartDownload.isEnabled = false
                             buttonFifteen.setText(R.string.completed)
+                            buttonFifteen.visibility = View.INVISIBLE
+                            buttonCancel.visibility = View.INVISIBLE
+
                             buttonContinue.visibility = View.VISIBLE
                             textViewProgressFifteen2.text="File Download Complete!"
                             textViewProgressFifteen.text="Saved to -> InternalStorage/Decagon"

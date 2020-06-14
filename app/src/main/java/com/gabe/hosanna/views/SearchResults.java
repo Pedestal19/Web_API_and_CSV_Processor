@@ -64,17 +64,17 @@ public class SearchResults extends AppCompatActivity {
             @Override
             public void run() {
                 //TODO your background code
-                getFilteredResults();
+                getFilteredResults(searchGender, searchCountry, searchColour);
 
             }
         });
 
     }
 
-    private FilteredResultsAdapter getFilteredResults() {
+    public FilteredResultsAdapter getFilteredResults(String genderParam, String countryParam, String colourPram) {
         Reader in = null;
         try {
-            Log.e(" gefile dir  ", Environment.getExternalStorageDirectory().toString());
+//            Log.e(" gefile dir  ", Environment.getExternalStorageDirectory().toString());
             in = new FileReader(Environment.getExternalStorageDirectory()+"/decagon/car_owners_data.csv");
             DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
             Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
@@ -85,9 +85,9 @@ public class SearchResults extends AppCompatActivity {
                 String country = record.get(4);
                 Log.e(" results list "+i+" ","from csv: " +gender+ " " +carColour+" "+country);
                 i++;
-                if(gender.toLowerCase().equals(searchGender)){
-                    ArrayList<String> splitedCountry = new ArrayList<>(Arrays.asList(searchCountry.split(",")));
-                    ArrayList<String> splitedColours = new ArrayList<>(Arrays.asList(searchColour.split(",")));
+                if(gender.toLowerCase().equals(genderParam) || gender.equalsIgnoreCase("")){
+                    ArrayList<String> splitedCountry = new ArrayList<>(Arrays.asList(countryParam.split(",")));
+                    ArrayList<String> splitedColours = new ArrayList<>(Arrays.asList(colourPram.split(",")));
 
 //                    String[] myData = searchCountry.split("/");
 
